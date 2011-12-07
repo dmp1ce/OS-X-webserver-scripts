@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Turn off apache
+echo "Stoping Apache."
+sudo apachectl stop
+
+# Turn on Nginx
+echo "Starting Nginx"
+sudo nginx

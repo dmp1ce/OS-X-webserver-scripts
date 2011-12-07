@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Stop Nginx just in case
+echo "Stopping Nginx just in case it is running."
+sudo nginx -s stop
+
+echo "Stopping Apache."
+sudo apachectl stop
+
+echo "Starting Apache."
+sudo apachectl start
